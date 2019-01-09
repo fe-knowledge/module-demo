@@ -5,8 +5,9 @@
   "main": "index.js",
   "bin": {},
   "scripts": {
-    "dev": "npm run dev",
-    "sub": "git submodule update --init --recursive",
+    "dev": "echo s",
+    "predev": "npm run sub",
+    "sub": "git submodule update --init --remote --recursive --merge",
     "build": "npm run build",
     "test": "test/index.js",
     "clean": "rimraf dist/* && rimraf *.log"
